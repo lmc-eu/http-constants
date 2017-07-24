@@ -1,6 +1,7 @@
 # HTTP Header Fields Constants for PHP
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/lmc/http-constants.svg?style=flat-square)](https://packagist.org/packages/lmc/http-constants)
+[![Travis Build Status](https://img.shields.io/travis/lmc-eu/http-constants.svg?style=flat-square)](https://travis-ci.org/lmc-eu/http-constants)
 [![Total Downloads](https://img.shields.io/packagist/dt/lmc/http-constants.svg?style=flat-square)](https://packagist.org/packages/lmc/http-constants)
 [![License](https://img.shields.io/packagist/l/lmc/http-constants.svg?style=flat-square)](https://packagist.org/packages/lmc/http-constants)
 
