@@ -1,0 +1,19 @@
+{
+    "name": "lmc/http-constants",
+    "description": "HTTP Header Fields Constants",
+    "keywords": [
+        "http",
+        "request",
+        "response",
+        "constants"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Lmc\\HttpConstants\\": "src/"
+        }
+    },
+    "require": {}
+}
