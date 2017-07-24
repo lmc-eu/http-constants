@@ -10,4 +10,4 @@ install:
   - travis_retry composer update --no-interaction $dependencies
 
 script:
-  - php -l src/
+  - php -l src/*.php
