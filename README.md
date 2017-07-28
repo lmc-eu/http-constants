@@ -7,11 +7,11 @@
 
 The missing PHP constants definition for header fields of your HTTP requests and responses. 
 
-Stop placing typos and repeating string identifiers of the headers in your code!
+Stop repeating string identifiers and placing typos of HTTP headers in your code!
 
 Could be used when interacting with headers using [pure PHP], [Guzzle], [Symfony HttpFoundation], [Zend HTTP], [Zend Diactoros] etc.
 
-Contains constants for headers defined in [IANA list] (both Permanent and Provisional) and some common non-standard headers based on [Wikipedia list].
+Contains all ~200 constants for headers defined in [IANA list] (both Permanent and Provisional) and some common non-standard headers based on [Wikipedia list].
 
 ## Install
 
