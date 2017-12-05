@@ -15,5 +15,7 @@
             "Lmc\\HttpConstants\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "php": "^7.0"
+    }
 }

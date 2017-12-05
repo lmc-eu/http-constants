@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Lmc\HttpConstants;
 
@@ -84,7 +84,7 @@ final class Header
     const HOST = 'Host'; // RFC7230, Section 5.4
     const HTTP2_SETTINGS = 'HTTP2-Settings'; // RFC7540, Section 3.2.1
     const IM = 'IM'; // RFC4229
-    // const IF = 'If'; // RFC4918 // TODO: re-enable in PHP7+
+    const IF = 'If'; // RFC4918
     const IF_MATCH = 'If-Match'; // RFC7232, Section 3.1
     const IF_MODIFIED_SINCE = 'If-Modified-Since'; // RFC7232, Section 3.3
     const IF_NONE_MATCH = 'If-None-Match'; // RFC7232, Section 3.2
@@ -126,7 +126,7 @@ final class Header
     const PROXY_AUTHORIZATION = 'Proxy-Authorization'; // RFC7235, Section 4.4
     const PROXY_FEATURES = 'Proxy-Features'; // RFC4229
     const PROXY_INSTRUCTION = 'Proxy-Instruction'; // RFC4229
-    // const PUBLIC = 'Public'; // RFC4229 // TODO: re-enable in PHP7+
+    const PUBLIC = 'Public'; // RFC4229
     const PUBLIC_KEY_PINS = 'Public-Key-Pins'; // RFC7469
     const PUBLIC_KEY_PINS_REPORT_ONLY = 'Public-Key-Pins-Report-Only'; // RFC7469
     const RANGE = 'Range'; // RFC7233, Section 3.1
