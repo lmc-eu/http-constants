@@ -23,6 +23,8 @@ Note you will need to have [Composer](https://getcomposer.org/) installed to do 
 
 ## Usage
 
+### Using the Header class
+
 ```php
 <?php
 
@@ -56,6 +58,46 @@ class Example
     {
         header(Header::CONTENT_TYPE . ': application/pdf');
         header(Header::CACHE_CONTROL .  ': no-cache, must-revalidate');
+    }
+}
+
+```
+
+### Implementing the HeaderInterface
+
+```php
+<?php
+
+namespace My;
+
+use Lmc\HttpConstants\HeaderInterface;
+
+final class Example implements HeaderInterface
+{
+    public function exampleWithGuzzle()
+    {
+        $client = new \GuzzleHttp\Client();
+
+        $response = $client->request(
+            'GET',
+            'https://api.foo/bar',
+             ['headers' => [self::ACCEPT_ENCODING => 'gzip']]
+       );
+
+        echo $response->getHeaderLine(self::CONTENT_TYPE);
+    }
+
+    public function exampleWithSymfonyHttpFoundation()
+    {
+        $response = new \Symfony\Component\HttpFoundation\Response();
+
+        $response->headers->set(self::ACCESS_CONTROL_ALLOW_ORIGIN, 'www.jobs.cz');
+    }
+
+    public function exampleWithPurePhp()
+    {
+        header(self::CONTENT_TYPE . ': application/pdf');
+        header(self::CACHE_CONTROL .  ': no-cache, must-revalidate');
     }
 }
 
