@@ -3,6 +3,7 @@
 <!-- There is always Unreleased section on the top. Subsections (Added, Changed, Fixed, Removed) should be added as needed. -->
 
 ## Unreleased
+- Updated PHPDoc
 
 ## 1.0.0 - 2018-02-21
 - Require PHP 7.
