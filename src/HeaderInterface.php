@@ -47,6 +47,7 @@ interface HeaderInterface
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-5.3.4
+     * @see https://tools.ietf.org/html/rfc7694#section-3
      */
     const ACCEPT_ENCODING = 'Accept-Encoding';
 
@@ -70,6 +71,7 @@ interface HeaderInterface
 
     /**
      * @var string
+     * @see https://www.w3.org/TR/ldp/
      */
     const ACCEPT_POST = 'Accept-Post';
 
