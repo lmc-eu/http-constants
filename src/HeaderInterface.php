@@ -14,225 +14,1217 @@ interface HeaderInterface
 {
     // Permanent Message Headers
 
-    const A_IM = 'A-IM'; // RFC4229
-    const ACCEPT = 'Accept'; // RFC7231, Section 5.3.2
-    const ACCEPT_ADDITIONS = 'Accept-Additions'; // RFC4229
-    const ACCEPT_CHARSET = 'Accept-Charset'; // RFC7231, Section 5.3.3
-    const ACCEPT_DATETIME = 'Accept-Datetime'; // RFC7089
-    const ACCEPT_ENCODING = 'Accept-Encoding'; // RFC7231, Section 5.3.4, RFC7694, Section 3
-    const ACCEPT_FEATURES = 'Accept-Features'; // RFC4229
-    const ACCEPT_LANGUAGE = 'Accept-Language'; // RFC7231, Section 5.3.5
-    const ACCEPT_PATCH = 'Accept-Patch'; // RFC5789
-    const ACCEPT_POST = 'Accept-Post'; // https://www.w3.org/TR/ldp/
-    const ACCEPT_RANGES = 'Accept-Ranges'; // RFC7233, Section 2.3
-    const AGE = 'Age'; // RFC7234, Section 5.1
-    const ALLOW = 'Allow'; // RFC7231, Section 7.4.1
-    const ALPN = 'ALPN'; // RFC7639, Section 2
-    const ALT_SVC = 'Alt-Svc'; // RFC7838
-    const ALT_USED = 'Alt-Used'; // RFC7838
-    const ALTERNATES = 'Alternates'; // RFC4229
-    const APPLY_TO_REDIRECT_REF = 'Apply-To-Redirect-Ref'; // RFC4437
-    const AUTHENTICATION_CONTROL = 'Authentication-Control'; // RFC8053, Section 4
-    const AUTHENTICATION_INFO = 'Authentication-Info'; // RFC7615, Section 3
-    const AUTHORIZATION = 'Authorization'; // RFC7235, Section 4.2
-    const C_EXT = 'C-Ext'; // RFC4229
-    const C_MAN = 'C-Man'; // RFC4229
-    const C_OPT = 'C-Opt'; // RFC4229
-    const C_PEP = 'C-PEP'; // RFC4229
-    const C_PEP_INFO = 'C-PEP-Info'; // RFC4229
-    const CACHE_CONTROL = 'Cache-Control'; // RFC7234, Section 5.2
-    const CALDAV_TIMEZONES = 'CalDAV-Timezones'; // RFC7809, Section 7.1
-    const CLOSE = 'Close'; // RFC7230, Section 8.1
-    const CONNECTION = 'Connection'; // RFC7230, Section 6.1
-    /** @deprecated */
-    const CONTENT_BASE = 'Content-Base'; // RFC2068, RFC2616
-    const CONTENT_DISPOSITION = 'Content-Disposition'; // RFC6266
-    const CONTENT_ENCODING = 'Content-Encoding'; // RFC7231, Section 3.1.2.2
-    const CONTENT_ID = 'Content-ID'; // RFC4229
-    const CONTENT_LANGUAGE = 'Content-Language'; // RFC7231, Section 3.1.3.2
-    const CONTENT_LENGTH = 'Content-Length'; // RFC7230, Section 3.3.2
-    const CONTENT_LOCATION = 'Content-Location'; // RFC7231, Section 3.1.4.2
-    const CONTENT_MD5 = 'Content-MD5'; // RFC4229
-    const CONTENT_RANGE = 'Content-Range'; // RFC7233, Section 4.2
-    const CONTENT_SCRIPT_TYPE = 'Content-Script-Type'; // RFC4229
-    const CONTENT_STYLE_TYPE = 'Content-Style-Type'; // RFC4229
-    const CONTENT_TYPE = 'Content-Type'; // RFC7231, Section 3.1.1.5
-    const CONTENT_VERSION = 'Content-Version'; // RFC4229
-    const COOKIE = 'Cookie'; // RFC6265
-    /** @deprecated */
-    const COOKIE2 = 'Cookie2'; // RFC2965, RFC6265
-    const DASL = 'DASL'; // RFC5323
-    const DAV = 'DAV'; // RFC4918
-    const DATE = 'Date'; // RFC7231, Section 7.1.1.2
-    const DEFAULT_STYLE = 'Default-Style'; // RFC4229
-    const DELTA_BASE = 'Delta-Base'; // RFC4229
-    const DEPTH = 'Depth'; // RFC4918
-    const DERIVED_FROM = 'Derived-From'; // RFC4229
-    const DESTINATION = 'Destination'; // RFC4918
-    const DIFFERENTIAL_ID = 'Differential-ID'; // RFC4229
-    const DIGEST = 'Digest'; // RFC4229
-    const ETAG = 'ETag'; // RFC7232, Section 2.3
-    const EXPECT = 'Expect'; // RFC7231, Section 5.1.1
-    const EXPIRES = 'Expires'; // RFC7234, Section 5.3
-    const EXT = 'Ext'; // RFC4229
-    const FORWARDED = 'Forwarded'; // RFC7239
-    const FROM = 'From'; // RFC7231, Section 5.5.1
-    const GETPROFILE = 'GetProfile'; // RFC4229
-    const HOBAREG = 'Hobareg'; // RFC7486, Section 6.1.1
-    const HOST = 'Host'; // RFC7230, Section 5.4
-    const HTTP2_SETTINGS = 'HTTP2-Settings'; // RFC7540, Section 3.2.1
-    const IM = 'IM'; // RFC4229
-    const IF = 'If'; // RFC4918
-    const IF_MATCH = 'If-Match'; // RFC7232, Section 3.1
-    const IF_MODIFIED_SINCE = 'If-Modified-Since'; // RFC7232, Section 3.3
-    const IF_NONE_MATCH = 'If-None-Match'; // RFC7232, Section 3.2
-    const IF_RANGE = 'If-Range'; // RFC7233, Section 3.2
-    const IF_SCHEDULE_TAG_MATCH = 'If-Schedule-Tag-Match'; // RFC6638
-    const IF_UNMODIFIED_SINCE = 'If-Unmodified-Since'; // RFC7232, Section 3.4
-    const KEEP_ALIVE = 'Keep-Alive'; // RFC4229
-    const LABEL = 'Label'; // RFC4229
-    const LAST_MODIFIED = 'Last-Modified'; // RFC7232, Section 2.2
-    const LINK = 'Link'; // RFC5988
-    const LOCATION = 'Location'; // RFC7231, Section 7.1.2
-    const LOCK_TOKEN = 'Lock-Token'; // RFC4918
-    const MAN = 'Man'; // RFC4229
-    const MAX_FORWARDS = 'Max-Forwards'; // RFC7231, Section 5.1.2
-    const MEMENTO_DATETIME = 'Memento-Datetime'; // RFC7089
-    const METER = 'Meter'; // RFC4229
-    const MIME_VERSION = 'MIME-Version'; // RFC7231, Appendix A.1
-    const NEGOTIATE = 'Negotiate'; // RFC4229
-    const OPT = 'Opt'; // RFC4229
-    const OPTIONAL_WWW_AUTHENTICATE = 'Optional-WWW-Authenticate'; // RFC8053, Section 3
-    const ORDERING_TYPE = 'Ordering-Type'; // RFC4229
-    const ORIGIN = 'Origin'; // RFC6454
-    const OVERWRITE = 'Overwrite'; // RFC4918
-    const P3P = 'P3P'; // RFC4229
-    const PEP = 'PEP'; // RFC4229
-    const PICS_LABEL = 'PICS-Label'; // RFC4229
-    const PEP_INFO = 'Pep-Info'; // RFC4229
-    const POSITION = 'Position'; // RFC4229
-    const PRAGMA = 'Pragma'; // RFC7234, Section 5.4
-    const PREFER = 'Prefer'; // RFC7240
-    const PREFERENCE_APPLIED = 'Preference-Applied'; // RFC7240
-    const PROFILEOBJECT = 'ProfileObject'; // RFC4229
-    const PROTOCOL = 'Protocol'; // RFC4229
-    const PROTOCOL_INFO = 'Protocol-Info'; // RFC4229
-    const PROTOCOL_QUERY = 'Protocol-Query'; // RFC4229
-    const PROTOCOL_REQUEST = 'Protocol-Request'; // RFC4229
-    const PROXY_AUTHENTICATE = 'Proxy-Authenticate'; // RFC7235, Section 4.3
-    const PROXY_AUTHENTICATION_INFO = 'Proxy-Authentication-Info'; // RFC7615, Section 4
-    const PROXY_AUTHORIZATION = 'Proxy-Authorization'; // RFC7235, Section 4.4
-    const PROXY_FEATURES = 'Proxy-Features'; // RFC4229
-    const PROXY_INSTRUCTION = 'Proxy-Instruction'; // RFC4229
-    const PUBLIC = 'Public'; // RFC4229
-    const PUBLIC_KEY_PINS = 'Public-Key-Pins'; // RFC7469
-    const PUBLIC_KEY_PINS_REPORT_ONLY = 'Public-Key-Pins-Report-Only'; // RFC7469
-    const RANGE = 'Range'; // RFC7233, Section 3.1
-    const REDIRECT_REF = 'Redirect-Ref'; // RFC4437
-    const REFERER = 'Referer'; // RFC7231, Section 5.5.2
-    const RETRY_AFTER = 'Retry-After'; // RFC7231, Section 7.1.3
-    const SAFE = 'Safe'; // RFC4229
-    const SCHEDULE_REPLY = 'Schedule-Reply'; // RFC6638
-    const SCHEDULE_TAG = 'Schedule-Tag'; // RFC6638
-    const SEC_WEBSOCKET_ACCEPT = 'Sec-WebSocket-Accept'; // RFC6455
-    const SEC_WEBSOCKET_EXTENSIONS = 'Sec-WebSocket-Extensions'; // RFC6455
-    const SEC_WEBSOCKET_KEY = 'Sec-WebSocket-Key'; // RFC6455
-    const SEC_WEBSOCKET_PROTOCOL = 'Sec-WebSocket-Protocol'; // RFC6455
-    const SEC_WEBSOCKET_VERSION = 'Sec-WebSocket-Version'; // RFC6455
-    const SECURITY_SCHEME = 'Security-Scheme'; // RFC4229
-    const SERVER = 'Server'; // RFC7231, Section 7.4.2
-    const SET_COOKIE = 'Set-Cookie'; // RFC6265
-    /** @deprecated */
-    const SET_COOKIE2 = 'Set-Cookie2'; // RFC2965, RFC6265
-    const SETPROFILE = 'SetProfile'; // RFC4229
-    const SLUG = 'SLUG'; // RFC5023
-    const SOAPACTION = 'SoapAction'; // RFC4229
-    const STATUS_URI = 'Status-URI'; // RFC4229
-    const STRICT_TRANSPORT_SECURITY = 'Strict-Transport-Security'; // RFC6797
-    const SURROGATE_CAPABILITY = 'Surrogate-Capability'; // RFC4229
-    const SURROGATE_CONTROL = 'Surrogate-Control'; // RFC4229
-    const TCN = 'TCN'; // RFC4229
-    const TE = 'TE'; // RFC7230, Section 4.3
-    const TIMEOUT = 'Timeout'; // RFC4918
-    const TOPIC = 'Topic'; // RFC8030, Section 5.4
-    const TRAILER = 'Trailer'; // RFC7230, Section 4.4
-    const TRANSFER_ENCODING = 'Transfer-Encoding'; // RFC7230, Section 3.3.1
-    const TTL = 'TTL'; // RFC8030, Section 5.2
-    const URGENCY = 'Urgency'; // RFC8030, Section 5.3
-    const URI = 'URI'; // RFC4229
-    const UPGRADE = 'Upgrade'; // RFC7230, Section 6.7
-    const USER_AGENT = 'User-Agent'; // RFC7231, Section 5.5.3
-    const VARIANT_VARY = 'Variant-Vary'; // RFC4229
-    const VARY = 'Vary'; // RFC7231, Section 7.1.4
-    const VIA = 'Via'; // RFC7230, Section 5.7.1
-    const WWW_AUTHENTICATE = 'WWW-Authenticate'; // RFC7235, Section 4.1
-    const WANT_DIGEST = 'Want-Digest'; // RFC4229
-    const WARNING = 'Warning'; // RFC7234, Section 5.5
-    const X_FRAME_OPTIONS = 'X-Frame-Options'; // RFC7034
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const A_IM = 'A-IM';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-5.3.2
+     */
+    const ACCEPT = 'Accept';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const ACCEPT_ADDITIONS = 'Accept-Additions';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-5.3.3
+     */
+    const ACCEPT_CHARSET = 'Accept-Charset';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7089
+     */
+    const ACCEPT_DATETIME = 'Accept-Datetime';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-5.3.4
+     */
+    const ACCEPT_ENCODING = 'Accept-Encoding';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-5.3.5
+     */
+    const ACCEPT_LANGUAGE = 'Accept-Language';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc5789
+     */
+    const ACCEPT_PATCH = 'Accept-Patch';
+
+    /**
+     * @var string
+     */
+    const ACCEPT_POST = 'Accept-Post';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7233#section-2.3
+     */
+    const ACCEPT_RANGES = 'Accept-Ranges';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7234#section-5.1
+     */
+    const AGE = 'Age';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-7.4.1
+     */
+    const ALLOW = 'Allow';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7639#section-2
+     */
+    const ALPN = 'ALPN';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7838
+     */
+    const ALT_SVC = 'Alt-Svc';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7838
+     */
+    const ALT_USED = 'Alt-Used';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const ALTERNATES = 'Alternates';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4437
+     */
+    const APPLY_TO_REDIRECT_REF = 'Apply-To-Redirect-Ref';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc8053#section-4
+     */
+    const AUTHENTICATION_CONTROL = 'Authentication-Control';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7615#section-3
+     */
+    const AUTHENTICATION_INFO = 'Authentication-Info';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7235#section-4.2
+     */
+    const AUTHORIZATION = 'Authorization';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const C_EXT = 'C-Ext';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const C_MAN = 'C-Man';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const C_OPT = 'C-Opt';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const C_PEP = 'C-PEP';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const C_PEP_INFO = 'C-PEP-Info';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7234#section-5.2
+     */
+    const CACHE_CONTROL = 'Cache-Control';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7809#section-7.1
+     */
+    const CALDAV_TIMEZONES = 'CalDAV-Timezones';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7230#section-8.1
+     */
+    const CLOSE = 'Close';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7230#section-6.1
+     */
+    const CONNECTION = 'Connection';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc2068
+     * @deprecated
+     */
+    const CONTENT_BASE = 'Content-Base';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc6266
+     */
+    const CONTENT_DISPOSITION = 'Content-Disposition';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-3.1.2.2
+     */
+    const CONTENT_ENCODING = 'Content-Encoding';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const CONTENT_ID = 'Content-ID';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-3.1.3.2
+     */
+    const CONTENT_LANGUAGE = 'Content-Language';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7230#section-3.3.2
+     */
+    const CONTENT_LENGTH = 'Content-Length';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-3.1.4.2
+     */
+    const CONTENT_LOCATION = 'Content-Location';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const CONTENT_MD5 = 'Content-MD5';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7233#section-4.2
+     */
+    const CONTENT_RANGE = 'Content-Range';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const CONTENT_SCRIPT_TYPE = 'Content-Script-Type';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const CONTENT_STYLE_TYPE = 'Content-Style-Type';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-3.1.1.5
+     */
+    const CONTENT_TYPE = 'Content-Type';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const CONTENT_VERSION = 'Content-Version';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc6265
+     */
+    const COOKIE = 'Cookie';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc2965
+     * @deprecated
+     */
+    const COOKIE2 = 'Cookie2';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc5323
+     */
+    const DASL = 'DASL';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4918
+     */
+    const DAV = 'DAV';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-7.1.1.2
+     */
+    const DATE = 'Date';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const DEFAULT_STYLE = 'Default-Style';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const DELTA_BASE = 'Delta-Base';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4918
+     */
+    const DEPTH = 'Depth';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const DERIVED_FROM = 'Derived-From';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4918
+     */
+    const DESTINATION = 'Destination';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const DIFFERENTIAL_ID = 'Differential-ID';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const DIGEST = 'Digest';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7232#section-2.3
+     */
+    const ETAG = 'ETag';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-5.1.1
+     */
+    const EXPECT = 'Expect';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7234#section-5.3
+     */
+    const EXPIRES = 'Expires';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const EXT = 'Ext';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7239
+     */
+    const FORWARDED = 'Forwarded';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-5.5.1
+     */
+    const FROM = 'From';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const GETPROFILE = 'GetProfile';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7486#section-6.1.1
+     */
+    const HOBAREG = 'Hobareg';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7230#section-5.4
+     */
+    const HOST = 'Host';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7540#section-3.2.1
+     */
+    const HTTP2_SETTINGS = 'HTTP2-Settings';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const IM = 'IM';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4918
+     */
+    const IF = 'If';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7232#section-3.1
+     */
+    const IF_MATCH = 'If-Match';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7232#section-3.3
+     */
+    const IF_MODIFIED_SINCE = 'If-Modified-Since';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7232#section-3.2
+     */
+    const IF_NONE_MATCH = 'If-None-Match';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7233#section-3.2
+     */
+    const IF_RANGE = 'If-Range';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc6638
+     */
+    const IF_SCHEDULE_TAG_MATCH = 'If-Schedule-Tag-Match';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7232#section-3.4
+     */
+    const IF_UNMODIFIED_SINCE = 'If-Unmodified-Since';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const KEEP_ALIVE = 'Keep-Alive';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const LABEL = 'Label';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7232#section-2.2
+     */
+    const LAST_MODIFIED = 'Last-Modified';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc5988
+     */
+    const LINK = 'Link';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-7.1.2
+     */
+    const LOCATION = 'Location';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4918
+     */
+    const LOCK_TOKEN = 'Lock-Token';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const MAN = 'Man';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-5.1.2
+     */
+    const MAX_FORWARDS = 'Max-Forwards';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7089
+     */
+    const MEMENTO_DATETIME = 'Memento-Datetime';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const METER = 'Meter';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231
+     */
+    const MIME_VERSION = 'MIME-Version';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const NEGOTIATE = 'Negotiate';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const OPT = 'Opt';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc8053#section-3
+     */
+    const OPTIONAL_WWW_AUTHENTICATE = 'Optional-WWW-Authenticate';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const ORDERING_TYPE = 'Ordering-Type';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc6454
+     */
+    const ORIGIN = 'Origin';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4918
+     */
+    const OVERWRITE = 'Overwrite';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const P3P = 'P3P';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const PEP = 'PEP';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const PICS_LABEL = 'PICS-Label';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const PEP_INFO = 'Pep-Info';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const POSITION = 'Position';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7234#section-5.4
+     */
+    const PRAGMA = 'Pragma';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7240
+     */
+    const PREFER = 'Prefer';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7240
+     */
+    const PREFERENCE_APPLIED = 'Preference-Applied';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const PROFILEOBJECT = 'ProfileObject';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const PROTOCOL = 'Protocol';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const PROTOCOL_INFO = 'Protocol-Info';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const PROTOCOL_QUERY = 'Protocol-Query';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const PROTOCOL_REQUEST = 'Protocol-Request';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7235#section-4.3
+     */
+    const PROXY_AUTHENTICATE = 'Proxy-Authenticate';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7615#section-4
+     */
+    const PROXY_AUTHENTICATION_INFO = 'Proxy-Authentication-Info';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7235#section-4.4
+     */
+    const PROXY_AUTHORIZATION = 'Proxy-Authorization';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const PROXY_FEATURES = 'Proxy-Features';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const PROXY_INSTRUCTION = 'Proxy-Instruction';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const PUBLIC = 'Public';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7469
+     */
+    const PUBLIC_KEY_PINS = 'Public-Key-Pins';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7469
+     */
+    const PUBLIC_KEY_PINS_REPORT_ONLY = 'Public-Key-Pins-Report-Only';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7233#section-3.1
+     */
+    const RANGE = 'Range';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4437
+     */
+    const REDIRECT_REF = 'Redirect-Ref';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-5.5.2
+     */
+    const REFERER = 'Referer';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-7.1.3
+     */
+    const RETRY_AFTER = 'Retry-After';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const SAFE = 'Safe';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc6638
+     */
+    const SCHEDULE_REPLY = 'Schedule-Reply';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc6638
+     */
+    const SCHEDULE_TAG = 'Schedule-Tag';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc6455
+     */
+    const SEC_WEBSOCKET_ACCEPT = 'Sec-WebSocket-Accept';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc6455
+     */
+    const SEC_WEBSOCKET_EXTENSIONS = 'Sec-WebSocket-Extensions';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc6455
+     */
+    const SEC_WEBSOCKET_KEY = 'Sec-WebSocket-Key';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc6455
+     */
+    const SEC_WEBSOCKET_PROTOCOL = 'Sec-WebSocket-Protocol';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc6455
+     */
+    const SEC_WEBSOCKET_VERSION = 'Sec-WebSocket-Version';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const SECURITY_SCHEME = 'Security-Scheme';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-7.4.2
+     */
+    const SERVER = 'Server';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc6265
+     */
+    const SET_COOKIE = 'Set-Cookie';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc2965
+     * @deprecated
+     */
+    const SET_COOKIE2 = 'Set-Cookie2';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const SETPROFILE = 'SetProfile';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc5023
+     */
+    const SLUG = 'SLUG';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const SOAPACTION = 'SoapAction';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const STATUS_URI = 'Status-URI';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc6797
+     */
+    const STRICT_TRANSPORT_SECURITY = 'Strict-Transport-Security';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const SURROGATE_CAPABILITY = 'Surrogate-Capability';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const SURROGATE_CONTROL = 'Surrogate-Control';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const TCN = 'TCN';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7230#section-4.3
+     */
+    const TE = 'TE';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4918
+     */
+    const TIMEOUT = 'Timeout';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc8030#section-5.4
+     */
+    const TOPIC = 'Topic';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7230#section-4.4
+     */
+    const TRAILER = 'Trailer';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7230#section-3.3.1
+     */
+    const TRANSFER_ENCODING = 'Transfer-Encoding';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc8030#section-5.2
+     */
+    const TTL = 'TTL';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc8030#section-5.3
+     */
+    const URGENCY = 'Urgency';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const URI = 'URI';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7230#section-6.7
+     */
+    const UPGRADE = 'Upgrade';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-5.5.3
+     */
+    const USER_AGENT = 'User-Agent';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const VARIANT_VARY = 'Variant-Vary';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7231#section-7.1.4
+     */
+    const VARY = 'Vary';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7230#section-5.7.1
+     */
+    const VIA = 'Via';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7235#section-4.1
+     */
+    const WWW_AUTHENTICATE = 'WWW-Authenticate';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const WANT_DIGEST = 'Want-Digest';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7234#section-5.5
+     */
+    const WARNING = 'Warning';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc7034
+     */
+    const X_FRAME_OPTIONS = 'X-Frame-Options';
 
     // Provisional Message Headers
 
-    /** @deprecated */
-    const ACCESS_CONTROL = 'Access-Control'; // W3C Web Application Formats WG
-    const ACCESS_CONTROL_ALLOW_CREDENTIALS = 'Access-Control-Allow-Credentials'; // W3C Web Application Formats WG
-    const ACCESS_CONTROL_ALLOW_HEADERS = 'Access-Control-Allow-Headers'; // W3C Web Application Formats WG
-    const ACCESS_CONTROL_ALLOW_METHODS = 'Access-Control-Allow-Methods'; // W3C Web Application Formats WG
-    const ACCESS_CONTROL_ALLOW_ORIGIN = 'Access-Control-Allow-Origin'; // W3C Web Application Formats WG
-    const ACCESS_CONTROL_MAX_AGE = 'Access-Control-Max-Age'; // W3C Web Application Formats WG
-    const ACCESS_CONTROL_REQUEST_METHOD = 'Access-Control-Request-Method'; // W3C Web Application Formats WG
-    const ACCESS_CONTROL_REQUEST_HEADERS = 'Access-Control-Request-Headers'; // W3C Web Application Formats WG
-    const COMPLIANCE = 'Compliance'; // RFC4229
-    const CONTENT_TRANSFER_ENCODING = 'Content-Transfer-Encoding'; // RFC4229
-    const COST = 'Cost'; // RFC4229
-    const EDIINT_FEATURES = 'EDIINT-Features'; // RFC6017
-    const MESSAGE_ID = 'Message-ID'; // RFC4229
-    /** @deprecated */
-    const METHOD_CHECK = 'Method-Check'; // W3C Web Application Formats WG
-    /** @deprecated */
-    const METHOD_CHECK_EXPIRES = 'Method-Check-Expires'; // W3C Web Application Formats WG
-    const NON_COMPLIANCE = 'Non-Compliance'; // RFC4229
-    const OPTIONAL = 'Optional'; // RFC4229
-    /** @deprecated */
-    const REFERER_ROOT = 'Referer-Root'; // W3C Web Application Formats WG
-    const RESOLUTION_HINT = 'Resolution-Hint'; // RFC4229
-    const RESOLVER_LOCATION = 'Resolver-Location'; // RFC4229
-    const SUBOK = 'SubOK'; // RFC4229
-    const SUBST = 'Subst'; // RFC4229
-    const TITLE = 'Title'; // RFC4229
-    const UA_COLOR = 'UA-Color'; // RFC4229
-    const UA_MEDIA = 'UA-Media'; // RFC4229
-    const UA_PIXELS = 'UA-Pixels'; // RFC4229
-    const UA_RESOLUTION = 'UA-Resolution'; // RFC4229
-    const UA_WINDOWPIXELS = 'UA-Windowpixels'; // RFC4229
-    const VERSION = 'Version'; // RFC4229
-    const X_DEVICE_ACCEPT = 'X-Device-Accept'; // W3C Mobile Web Best Practices WG
-    const X_DEVICE_ACCEPT_CHARSET = 'X-Device-Accept-Charset'; // W3C Mobile Web Best Practices WG
-    const X_DEVICE_ACCEPT_ENCODING = 'X-Device-Accept-Encoding'; // W3C Mobile Web Best Practices WG
-    const X_DEVICE_ACCEPT_LANGUAGE = 'X-Device-Accept-Language'; // W3C Mobile Web Best Practices WG
-    const X_DEVICE_USER_AGENT = 'X-Device-User-Agent'; // W3C Mobile Web Best Practices WG
+    /**
+     * @var string
+     * @deprecated
+     */
+    const ACCESS_CONTROL = 'Access-Control';
+
+    /**
+     * @var string
+     */
+    const ACCESS_CONTROL_ALLOW_CREDENTIALS = 'Access-Control-Allow-Credentials';
+
+    /**
+     * @var string
+     */
+    const ACCESS_CONTROL_ALLOW_HEADERS = 'Access-Control-Allow-Headers';
+
+    /**
+     * @var string
+     */
+    const ACCESS_CONTROL_ALLOW_METHODS = 'Access-Control-Allow-Methods';
+
+    /**
+     * @var string
+     */
+    const ACCESS_CONTROL_ALLOW_ORIGIN = 'Access-Control-Allow-Origin';
+
+    /**
+     * @var string
+     */
+    const ACCESS_CONTROL_MAX_AGE = 'Access-Control-Max-Age';
+
+    /**
+     * @var string
+     */
+    const ACCESS_CONTROL_REQUEST_METHOD = 'Access-Control-Request-Method';
+
+    /**
+     * @var string
+     */
+    const ACCESS_CONTROL_REQUEST_HEADERS = 'Access-Control-Request-Headers';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const COMPLIANCE = 'Compliance';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const CONTENT_TRANSFER_ENCODING = 'Content-Transfer-Encoding';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const COST = 'Cost';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc6017
+     */
+    const EDIINT_FEATURES = 'EDIINT-Features';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const MESSAGE_ID = 'Message-ID';
+
+    /**
+     * @var string
+     * @deprecated
+     */
+    const METHOD_CHECK = 'Method-Check';
+
+    /**
+     * @var string
+     * @deprecated
+     */
+    const METHOD_CHECK_EXPIRES = 'Method-Check-Expires';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const NON_COMPLIANCE = 'Non-Compliance';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const OPTIONAL = 'Optional';
+
+    /**
+     * @var string
+     * @deprecated
+     */
+    const REFERER_ROOT = 'Referer-Root';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const RESOLUTION_HINT = 'Resolution-Hint';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const RESOLVER_LOCATION = 'Resolver-Location';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const SUBOK = 'SubOK';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const SUBST = 'Subst';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const TITLE = 'Title';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const UA_COLOR = 'UA-Color';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const UA_MEDIA = 'UA-Media';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const UA_PIXELS = 'UA-Pixels';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const UA_RESOLUTION = 'UA-Resolution';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const UA_WINDOWPIXELS = 'UA-Windowpixels';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const VERSION = 'Version';
+
+    /**
+     * @var string
+     */
+    const X_DEVICE_ACCEPT = 'X-Device-Accept';
+
+    /**
+     * @var string
+     */
+    const X_DEVICE_ACCEPT_CHARSET = 'X-Device-Accept-Charset';
+
+    /**
+     * @var string
+     */
+    const X_DEVICE_ACCEPT_ENCODING = 'X-Device-Accept-Encoding';
+
+    /**
+     * @var string
+     */
+    const X_DEVICE_ACCEPT_LANGUAGE = 'X-Device-Accept-Language';
+
+    /**
+     * @var string
+     */
+    const X_DEVICE_USER_AGENT = 'X-Device-User-Agent';
 
     // Non-standard Headers
 
+    /**
+     * @var string
+     */
     const CONTENT_SECURITY_POLICY = 'Content-Security-Policy';
+
+    /**
+     * @var string
+     */
     const DNT = 'DNT';
+
+    /**
+     * @var string
+     */
     const PROXY_CONNECTION = 'Proxy-Connection';
+
+    /**
+     * @var string
+     */
     const STATUS = 'Status';
+
+    /**
+     * @var string
+     */
     const UPGRADE_INSECURE_REQUESTS = 'Upgrade-Insecure-Requests';
+
+    /**
+     * @var string
+     */
     const X_CONTENT_DURATION = 'X-Content-Duration';
+
+    /**
+     * @var string
+     */
     const X_CONTENT_SECURITY_POLICY = 'X-Content-Security-Policy';
+
+    /**
+     * @var string
+     */
     const X_CONTENT_TYPE_OPTIONS = 'X-Content-Type-Options';
+
+    /**
+     * @var string
+     */
     const X_CORRELATION_ID = 'X-Correlation-ID';
+
+    /**
+     * @var string
+     */
     const X_CSRF_TOKEN = 'X-Csrf-Token';
+
+    /**
+     * @var string
+     */
     const X_FORWARDED_FOR = 'X-Forwarded-For';
+
+    /**
+     * @var string
+     */
     const X_FORWARDED_HOST = 'X-Forwarded-Host';
+
+    /**
+     * @var string
+     */
     const X_FORWARDED_PROTO = 'X-Forwarded-Proto';
+
+    /**
+     * @var string
+     */
     const X_HTTP_METHOD_OVERRIDE = 'X-Http-Method-Override';
+
+    /**
+     * @var string
+     */
     const X_POWERED_BY = 'X-Powered-By';
+
+    /**
+     * @var string
+     */
     const X_REQUEST_ID = 'X-Request-ID';
+
+    /**
+     * @var string
+     */
     const X_REQUESTED_WITH = 'X-Requested-With';
+
+    /**
+     * @var string
+     */
     const X_UA_COMPATIBLE = 'X-UA-Compatible';
+
+    /**
+     * @var string
+     */
     const X_UIDH = 'X-UIDH';
+
+    /**
+     * @var string
+     */
     const X_WAP_PROFILE = 'X-Wap-Profile';
+
+    /**
+     * @var string
+     */
     const X_WEBKIT_CSP = 'X-WebKit-CSP';
+
+    /**
+     * @var string
+     */
     const X_XSS_PROTECTION = 'X-XSS-Protection';
 }
