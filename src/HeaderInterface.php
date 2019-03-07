@@ -52,6 +52,12 @@ interface HeaderInterface
 
     /**
      * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    const ACCEPT_FEATURES = 'Accept-Features';
+
+    /**
+     * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-5.3.5
      */
     const ACCEPT_LANGUAGE = 'Accept-Language';
