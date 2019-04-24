@@ -1,9 +1,15 @@
 # HTTP Header Fields Constants for PHP
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/lmc/http-constants.svg?style=flat-square)](https://packagist.org/packages/lmc/http-constants)
-[![Travis Build Status](https://img.shields.io/travis/lmc-eu/http-constants.svg?style=flat-square)](https://travis-ci.org/lmc-eu/http-constants)
-[![Total Downloads](https://img.shields.io/packagist/dt/lmc/http-constants.svg?style=flat-square)](https://packagist.org/packages/lmc/http-constants)
-[![License](https://img.shields.io/packagist/l/lmc/http-constants.svg?style=flat-square)](https://packagist.org/packages/lmc/http-constants)
+[![Build Status](https://travis-ci.org/lmc-eu/http-constants.svg?branch=master)](https://travis-ci.org/lmc-eu/http-constants)
+
+[![Latest Stable Version](https://poser.pugx.org/lmc/http-constants/v/stable)](https://packagist.org/packages/lmc/http-constants)
+[![Latest Unstable Version](https://poser.pugx.org/lmc/http-constants/v/unstable)](https://packagist.org/packages/lmc/http-constants)
+[![License](https://poser.pugx.org/lmc/http-constants/license)](https://packagist.org/packages/lmc/http-constants)
+
+[![Total Downloads](https://poser.pugx.org/lmc/http-constants/downloads)](https://packagist.org/packages/lmc/http-constants)
+[![Daily Downloads](https://poser.pugx.org/lmc/http-constants/d/daily)](https://packagist.org/packages/lmc/http-constants)
+[![Monthly Downloads](https://poser.pugx.org/lmc/http-constants/d/monthly)](https://packagist.org/packages/lmc/http-constants)
+
 
 The missing PHP constants definition for header fields of your HTTP requests and responses. 
 
