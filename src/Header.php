@@ -942,6 +942,7 @@ final class Header
 
     /**
      * @var string
+     * @see https://fetch.spec.whatwg.org/#http-requests
      */
     const ACCESS_CONTROL_ALLOW_CREDENTIALS = 'Access-Control-Allow-Credentials';
 
@@ -1130,6 +1131,7 @@ final class Header
 
     /**
      * @var string
+     * @see https://www.w3.org/TR/CSP3/#csp-header
      */
     const CONTENT_SECURITY_POLICY = 'Content-Security-Policy';
 
