@@ -1,13 +1,18 @@
+sudo: false
 language: php
-
 php:
-  - 7
+  - 7.0
   - 7.1
   - 7.2
-
-install:
-  - travis_retry composer self-update && composer --version
-  - travis_retry composer update --no-interaction
-
-script:
-  - ./vendor/bin/phpunit
+  - 7.3
+  - nightly
+env:
+  - PREFER_LOWEST="--prefer-lowest --prefer-stable"
+  - PREFER_LOWEST=""
+matrix:
+  fast_finish: true
+  allow_failures:
+    - php: nightly
+before_script:
+  - composer update $PREFER_LOWEST
+script: ./vendor/bin/phpunit
