@@ -4,7 +4,7 @@
 
 ## Unreleased
 - Add PHPDoc for all constants.
-- Require PHP 7.1.
+- Require PHP 7.2.
 
 ## 1.0.0 - 2018-02-21
 - Require PHP 7.
