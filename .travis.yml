@@ -10,4 +10,4 @@ install:
   - travis_retry composer update --no-interaction
 
 script:
-  - php -l src/*.php
+  - ./vendor/bin/phpunit
