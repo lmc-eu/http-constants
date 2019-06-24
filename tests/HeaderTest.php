@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 use Lmc\HttpConstants\Header;
 use PHPUnit\Framework\TestCase;
@@ -11,23 +11,24 @@ final class HeaderTest extends TestCase
     /**
      * @test
      */
-    public function shouldCoverAllConstants()
+    public function shouldCoverAllConstants(): void
     {
         $headersClass = new \ReflectionClass(Header::class);
-        $classHeaders = $headersClass->getConstants();
-        $this->assertCount(count($headersClass->getConstants()), $this->provideHeaders());
+        $definedConstantsCount = count($headersClass->getConstants());
+
+        $this->assertCount($definedConstantsCount, $this->provideHeaders());
     }
 
     /**
      * @test
      * @dataProvider provideHeaders
      */
-    public function shouldMatchHeaderValue(string $headerConstant, string $expectedValue)
+    public function shouldMatchHeaderValue(string $headerConstant, string $expectedValue): void
     {
         $this->assertSame($expectedValue, $headerConstant);
     }
 
-    public function provideHeaders() : array
+    public function provideHeaders(): array
     {
         return [
             Header::A_IM => [Header::A_IM, 'A-IM'],
@@ -183,13 +184,28 @@ final class HeaderTest extends TestCase
             Header::WARNING => [Header::WARNING, 'Warning'],
             Header::X_FRAME_OPTIONS => [Header::X_FRAME_OPTIONS, 'X-Frame-Options'],
             Header::ACCESS_CONTROL => [Header::ACCESS_CONTROL, 'Access-Control'],
-            Header::ACCESS_CONTROL_ALLOW_CREDENTIALS => [Header::ACCESS_CONTROL_ALLOW_CREDENTIALS, 'Access-Control-Allow-Credentials'],
-            Header::ACCESS_CONTROL_ALLOW_HEADERS => [Header::ACCESS_CONTROL_ALLOW_HEADERS, 'Access-Control-Allow-Headers'],
-            Header::ACCESS_CONTROL_ALLOW_METHODS => [Header::ACCESS_CONTROL_ALLOW_METHODS, 'Access-Control-Allow-Methods'],
+            Header::ACCESS_CONTROL_ALLOW_CREDENTIALS => [
+                Header::ACCESS_CONTROL_ALLOW_CREDENTIALS,
+                'Access-Control-Allow-Credentials',
+            ],
+            Header::ACCESS_CONTROL_ALLOW_HEADERS => [
+                Header::ACCESS_CONTROL_ALLOW_HEADERS,
+                'Access-Control-Allow-Headers',
+            ],
+            Header::ACCESS_CONTROL_ALLOW_METHODS => [
+                Header::ACCESS_CONTROL_ALLOW_METHODS,
+                'Access-Control-Allow-Methods',
+            ],
             Header::ACCESS_CONTROL_ALLOW_ORIGIN => [Header::ACCESS_CONTROL_ALLOW_ORIGIN, 'Access-Control-Allow-Origin'],
             Header::ACCESS_CONTROL_MAX_AGE => [Header::ACCESS_CONTROL_MAX_AGE, 'Access-Control-Max-Age'],
-            Header::ACCESS_CONTROL_REQUEST_METHOD => [Header::ACCESS_CONTROL_REQUEST_METHOD, 'Access-Control-Request-Method'],
-            Header::ACCESS_CONTROL_REQUEST_HEADERS => [Header::ACCESS_CONTROL_REQUEST_HEADERS, 'Access-Control-Request-Headers'],
+            Header::ACCESS_CONTROL_REQUEST_METHOD => [
+                Header::ACCESS_CONTROL_REQUEST_METHOD,
+                'Access-Control-Request-Method',
+            ],
+            Header::ACCESS_CONTROL_REQUEST_HEADERS => [
+                Header::ACCESS_CONTROL_REQUEST_HEADERS,
+                'Access-Control-Request-Headers',
+            ],
             Header::COMPLIANCE => [Header::COMPLIANCE, 'Compliance'],
             Header::CONTENT_TRANSFER_ENCODING => [Header::CONTENT_TRANSFER_ENCODING, 'Content-Transfer-Encoding'],
             Header::COST => [Header::COST, 'Cost'],

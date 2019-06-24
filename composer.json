@@ -16,9 +16,27 @@
         }
     },
     "require": {
-        "php": "^7.0"
+        "php": "^7.2"
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.5"
+        "phpunit/phpunit": "^8.1",
+        "lmc/coding-standard": "^1.3"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "all": [
+            "@analyze",
+            "@tests"
+        ],
+        "analyze": [
+            "@cs"
+        ],
+        "phpstan": "vendor/bin/phpstan analyze ./src ./tests -c phpstan.neon --ansi --level 7",
+        "tests": "vendor/bin/phpunit",
+        "tests-ci": "php -dxdebug.coverage_enable=1 vendor/bin/phpunit -c phpunit.xml.dist",
+        "cs": "vendor/bin/ecs check -vv --ansi src/ tests/",
+        "fix": "vendor/bin/ecs check -vv --ansi --clear-cache --fix src/ tests/"
     }
 }
