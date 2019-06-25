@@ -3,6 +3,8 @@
 <!-- There is always Unreleased section on the top. Subsections (Added, Changed, Fixed, Removed) should be added as needed. -->
 
 ## Unreleased
+
+## 1.1.0 - 2019-06-25
 - Add PHPDoc for all constants.
 - Require PHP 7.2.
 
