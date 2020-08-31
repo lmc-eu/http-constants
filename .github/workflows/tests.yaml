@@ -1,0 +1,75 @@
+name: Tests and linting
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron:  '0 3 * * *'
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        php-versions: ['7.2', '7.3', '7.4']
+        dependencies: ['']
+        exclude:
+          # Add lowest dependencies build for the lowest supported PHP version
+          - { php-versions: '7.2', dependencies: '--prefer-lowest' }
+
+    name: PHP ${{ matrix.php-versions }} ${{ matrix.dependencies }}
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-versions }}
+          extensions: mbstring, intl
+          coverage: xdebug
+
+      - name: Install dependencies
+        run: composer update --no-interaction ${{ matrix.dependencies }}
+
+      - name: Run tests
+        run: ./vendor/bin/phpunit --colors=always --coverage-clover build/logs/clover.xml
+
+# Disabled, as there is no executable code except constants in the library
+#      - name: Submit coverage to Coveralls
+#        env:
+#          COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#        run: |
+#          composer global require twinh/php-coveralls
+#          php-coveralls --coverage_clover=build/logs/clover.xml -v
+
+  codestyle:
+    name: "Code style and static analysis"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          extensions: mbstring, intl
+
+      - name: Install dependencies
+        run: composer update --no-interaction
+
+      - name: Lint
+        run: composer lint
+
+      - name: Run checks
+        run: composer analyze
+
+  markdown-link-check:
+    name: "Markdown link check"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-verbose-mode: 'yes'
