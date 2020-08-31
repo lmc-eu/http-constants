@@ -1,5 +1,6 @@
 {
     "name": "lmc/http-constants",
+    "type": "library",
     "description": "HTTP Header Fields Constants",
     "keywords": [
         "http",
@@ -7,36 +8,45 @@
         "response",
         "constants"
     ],
-    "type": "library",
     "license": "MIT",
-    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.8",
+        "lmc/coding-standard": "^2.0.3",
+        "php-parallel-lint/php-parallel-lint": "^1.2",
+        "phpunit/phpunit": "^8.1 || ^9.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
     "autoload": {
         "psr-4": {
             "Lmc\\HttpConstants\\": "src/"
         }
     },
-    "require": {
-        "php": "^7.2"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^8.1",
-        "lmc/coding-standard": "^1.3"
-    },
-    "config": {
-        "sort-packages": true
-    },
+    "minimum-stability": "stable",
     "scripts": {
         "all": [
+            "@lint",
             "@analyze",
             "@tests"
         ],
         "analyze": [
             "@cs"
         ],
+        "cs": "./vendor/bin/ecs check ./src/ ./tests/ --ansi",
+        "fix": [
+            "@composer normalize",
+            "vendor/bin/ecs check -vv --ansi --clear-cache --fix src/ tests/"
+        ],
+        "lint": [
+            "vendor/bin/parallel-lint -j 10 -e php ./src ./tests",
+            "@composer validate",
+            "@composer normalize --dry-run"
+        ],
         "phpstan": "vendor/bin/phpstan analyze ./src ./tests -c phpstan.neon --ansi --level 7",
-        "tests": "vendor/bin/phpunit",
-        "tests-ci": "php -dxdebug.coverage_enable=1 vendor/bin/phpunit -c phpunit.xml.dist",
-        "cs": "vendor/bin/ecs check -vv --ansi src/ tests/",
-        "fix": "vendor/bin/ecs check -vv --ansi --clear-cache --fix src/ tests/"
+        "tests": "vendor/bin/phpunit"
     }
 }
