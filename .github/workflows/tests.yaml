@@ -14,9 +14,10 @@ jobs:
       matrix:
         php-versions: ['7.2', '7.3', '7.4']
         dependencies: ['']
-        exclude:
+        include:
           # Add lowest dependencies build for the lowest supported PHP version
           - { php-versions: '7.2', dependencies: '--prefer-lowest' }
+          - { php-versions: '8.0', dependencies: '--ignore-platform-reqs' }
 
     name: PHP ${{ matrix.php-versions }} ${{ matrix.dependencies }}
 
