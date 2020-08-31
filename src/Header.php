@@ -20,917 +20,917 @@ final class Header
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const A_IM = 'A-IM';
+    public const A_IM = 'A-IM';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-5.3.2
      */
-    const ACCEPT = 'Accept';
+    public const ACCEPT = 'Accept';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const ACCEPT_ADDITIONS = 'Accept-Additions';
+    public const ACCEPT_ADDITIONS = 'Accept-Additions';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-5.3.3
      */
-    const ACCEPT_CHARSET = 'Accept-Charset';
+    public const ACCEPT_CHARSET = 'Accept-Charset';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7089
      */
-    const ACCEPT_DATETIME = 'Accept-Datetime';
+    public const ACCEPT_DATETIME = 'Accept-Datetime';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-5.3.4
      * @see https://tools.ietf.org/html/rfc7694#section-3
      */
-    const ACCEPT_ENCODING = 'Accept-Encoding';
+    public const ACCEPT_ENCODING = 'Accept-Encoding';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const ACCEPT_FEATURES = 'Accept-Features';
+    public const ACCEPT_FEATURES = 'Accept-Features';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-5.3.5
      */
-    const ACCEPT_LANGUAGE = 'Accept-Language';
+    public const ACCEPT_LANGUAGE = 'Accept-Language';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc5789
      */
-    const ACCEPT_PATCH = 'Accept-Patch';
+    public const ACCEPT_PATCH = 'Accept-Patch';
 
     /**
      * @var string
      * @see https://www.w3.org/TR/ldp/
      */
-    const ACCEPT_POST = 'Accept-Post';
+    public const ACCEPT_POST = 'Accept-Post';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7233#section-2.3
      */
-    const ACCEPT_RANGES = 'Accept-Ranges';
+    public const ACCEPT_RANGES = 'Accept-Ranges';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7234#section-5.1
      */
-    const AGE = 'Age';
+    public const AGE = 'Age';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-7.4.1
      */
-    const ALLOW = 'Allow';
+    public const ALLOW = 'Allow';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7639#section-2
      */
-    const ALPN = 'ALPN';
+    public const ALPN = 'ALPN';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7838
      */
-    const ALT_SVC = 'Alt-Svc';
+    public const ALT_SVC = 'Alt-Svc';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7838
      */
-    const ALT_USED = 'Alt-Used';
+    public const ALT_USED = 'Alt-Used';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const ALTERNATES = 'Alternates';
+    public const ALTERNATES = 'Alternates';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4437
      */
-    const APPLY_TO_REDIRECT_REF = 'Apply-To-Redirect-Ref';
+    public const APPLY_TO_REDIRECT_REF = 'Apply-To-Redirect-Ref';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc8053#section-4
      */
-    const AUTHENTICATION_CONTROL = 'Authentication-Control';
+    public const AUTHENTICATION_CONTROL = 'Authentication-Control';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7615#section-3
      */
-    const AUTHENTICATION_INFO = 'Authentication-Info';
+    public const AUTHENTICATION_INFO = 'Authentication-Info';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7235#section-4.2
      */
-    const AUTHORIZATION = 'Authorization';
+    public const AUTHORIZATION = 'Authorization';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const C_EXT = 'C-Ext';
+    public const C_EXT = 'C-Ext';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const C_MAN = 'C-Man';
+    public const C_MAN = 'C-Man';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const C_OPT = 'C-Opt';
+    public const C_OPT = 'C-Opt';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const C_PEP = 'C-PEP';
+    public const C_PEP = 'C-PEP';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const C_PEP_INFO = 'C-PEP-Info';
+    public const C_PEP_INFO = 'C-PEP-Info';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7234#section-5.2
      */
-    const CACHE_CONTROL = 'Cache-Control';
+    public const CACHE_CONTROL = 'Cache-Control';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7809#section-7.1
      */
-    const CALDAV_TIMEZONES = 'CalDAV-Timezones';
+    public const CALDAV_TIMEZONES = 'CalDAV-Timezones';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7230#section-8.1
      */
-    const CLOSE = 'Close';
+    public const CLOSE = 'Close';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7230#section-6.1
      */
-    const CONNECTION = 'Connection';
+    public const CONNECTION = 'Connection';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc2068
      * @deprecated
      */
-    const CONTENT_BASE = 'Content-Base';
+    public const CONTENT_BASE = 'Content-Base';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc6266
      */
-    const CONTENT_DISPOSITION = 'Content-Disposition';
+    public const CONTENT_DISPOSITION = 'Content-Disposition';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-3.1.2.2
      */
-    const CONTENT_ENCODING = 'Content-Encoding';
+    public const CONTENT_ENCODING = 'Content-Encoding';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const CONTENT_ID = 'Content-ID';
+    public const CONTENT_ID = 'Content-ID';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-3.1.3.2
      */
-    const CONTENT_LANGUAGE = 'Content-Language';
+    public const CONTENT_LANGUAGE = 'Content-Language';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7230#section-3.3.2
      */
-    const CONTENT_LENGTH = 'Content-Length';
+    public const CONTENT_LENGTH = 'Content-Length';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-3.1.4.2
      */
-    const CONTENT_LOCATION = 'Content-Location';
+    public const CONTENT_LOCATION = 'Content-Location';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const CONTENT_MD5 = 'Content-MD5';
+    public const CONTENT_MD5 = 'Content-MD5';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7233#section-4.2
      */
-    const CONTENT_RANGE = 'Content-Range';
+    public const CONTENT_RANGE = 'Content-Range';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const CONTENT_SCRIPT_TYPE = 'Content-Script-Type';
+    public const CONTENT_SCRIPT_TYPE = 'Content-Script-Type';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const CONTENT_STYLE_TYPE = 'Content-Style-Type';
+    public const CONTENT_STYLE_TYPE = 'Content-Style-Type';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-3.1.1.5
      */
-    const CONTENT_TYPE = 'Content-Type';
+    public const CONTENT_TYPE = 'Content-Type';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const CONTENT_VERSION = 'Content-Version';
+    public const CONTENT_VERSION = 'Content-Version';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc6265
      */
-    const COOKIE = 'Cookie';
+    public const COOKIE = 'Cookie';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc2965
      * @deprecated
      */
-    const COOKIE2 = 'Cookie2';
+    public const COOKIE2 = 'Cookie2';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc5323
      */
-    const DASL = 'DASL';
+    public const DASL = 'DASL';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4918
      */
-    const DAV = 'DAV';
+    public const DAV = 'DAV';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-7.1.1.2
      */
-    const DATE = 'Date';
+    public const DATE = 'Date';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const DEFAULT_STYLE = 'Default-Style';
+    public const DEFAULT_STYLE = 'Default-Style';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const DELTA_BASE = 'Delta-Base';
+    public const DELTA_BASE = 'Delta-Base';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4918
      */
-    const DEPTH = 'Depth';
+    public const DEPTH = 'Depth';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const DERIVED_FROM = 'Derived-From';
+    public const DERIVED_FROM = 'Derived-From';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4918
      */
-    const DESTINATION = 'Destination';
+    public const DESTINATION = 'Destination';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const DIFFERENTIAL_ID = 'Differential-ID';
+    public const DIFFERENTIAL_ID = 'Differential-ID';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const DIGEST = 'Digest';
+    public const DIGEST = 'Digest';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7232#section-2.3
      */
-    const ETAG = 'ETag';
+    public const ETAG = 'ETag';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-5.1.1
      */
-    const EXPECT = 'Expect';
+    public const EXPECT = 'Expect';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7234#section-5.3
      */
-    const EXPIRES = 'Expires';
+    public const EXPIRES = 'Expires';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const EXT = 'Ext';
+    public const EXT = 'Ext';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7239
      */
-    const FORWARDED = 'Forwarded';
+    public const FORWARDED = 'Forwarded';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-5.5.1
      */
-    const FROM = 'From';
+    public const FROM = 'From';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const GETPROFILE = 'GetProfile';
+    public const GETPROFILE = 'GetProfile';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7486#section-6.1.1
      */
-    const HOBAREG = 'Hobareg';
+    public const HOBAREG = 'Hobareg';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7230#section-5.4
      */
-    const HOST = 'Host';
+    public const HOST = 'Host';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7540#section-3.2.1
      */
-    const HTTP2_SETTINGS = 'HTTP2-Settings';
+    public const HTTP2_SETTINGS = 'HTTP2-Settings';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const IM = 'IM';
+    public const IM = 'IM';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4918
      */
-    const IF = 'If';
+    public const IF = 'If';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7232#section-3.1
      */
-    const IF_MATCH = 'If-Match';
+    public const IF_MATCH = 'If-Match';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7232#section-3.3
      */
-    const IF_MODIFIED_SINCE = 'If-Modified-Since';
+    public const IF_MODIFIED_SINCE = 'If-Modified-Since';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7232#section-3.2
      */
-    const IF_NONE_MATCH = 'If-None-Match';
+    public const IF_NONE_MATCH = 'If-None-Match';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7233#section-3.2
      */
-    const IF_RANGE = 'If-Range';
+    public const IF_RANGE = 'If-Range';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc6638
      */
-    const IF_SCHEDULE_TAG_MATCH = 'If-Schedule-Tag-Match';
+    public const IF_SCHEDULE_TAG_MATCH = 'If-Schedule-Tag-Match';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7232#section-3.4
      */
-    const IF_UNMODIFIED_SINCE = 'If-Unmodified-Since';
+    public const IF_UNMODIFIED_SINCE = 'If-Unmodified-Since';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const KEEP_ALIVE = 'Keep-Alive';
+    public const KEEP_ALIVE = 'Keep-Alive';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const LABEL = 'Label';
+    public const LABEL = 'Label';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7232#section-2.2
      */
-    const LAST_MODIFIED = 'Last-Modified';
+    public const LAST_MODIFIED = 'Last-Modified';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc5988
      */
-    const LINK = 'Link';
+    public const LINK = 'Link';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-7.1.2
      */
-    const LOCATION = 'Location';
+    public const LOCATION = 'Location';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4918
      */
-    const LOCK_TOKEN = 'Lock-Token';
+    public const LOCK_TOKEN = 'Lock-Token';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const MAN = 'Man';
+    public const MAN = 'Man';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-5.1.2
      */
-    const MAX_FORWARDS = 'Max-Forwards';
+    public const MAX_FORWARDS = 'Max-Forwards';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7089
      */
-    const MEMENTO_DATETIME = 'Memento-Datetime';
+    public const MEMENTO_DATETIME = 'Memento-Datetime';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const METER = 'Meter';
+    public const METER = 'Meter';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231
      */
-    const MIME_VERSION = 'MIME-Version';
+    public const MIME_VERSION = 'MIME-Version';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const NEGOTIATE = 'Negotiate';
+    public const NEGOTIATE = 'Negotiate';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const OPT = 'Opt';
+    public const OPT = 'Opt';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc8053#section-3
      */
-    const OPTIONAL_WWW_AUTHENTICATE = 'Optional-WWW-Authenticate';
+    public const OPTIONAL_WWW_AUTHENTICATE = 'Optional-WWW-Authenticate';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const ORDERING_TYPE = 'Ordering-Type';
+    public const ORDERING_TYPE = 'Ordering-Type';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc6454
      */
-    const ORIGIN = 'Origin';
+    public const ORIGIN = 'Origin';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4918
      */
-    const OVERWRITE = 'Overwrite';
+    public const OVERWRITE = 'Overwrite';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const P3P = 'P3P';
+    public const P3P = 'P3P';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const PEP = 'PEP';
+    public const PEP = 'PEP';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const PICS_LABEL = 'PICS-Label';
+    public const PICS_LABEL = 'PICS-Label';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const PEP_INFO = 'Pep-Info';
+    public const PEP_INFO = 'Pep-Info';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const POSITION = 'Position';
+    public const POSITION = 'Position';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7234#section-5.4
      */
-    const PRAGMA = 'Pragma';
+    public const PRAGMA = 'Pragma';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7240
      */
-    const PREFER = 'Prefer';
+    public const PREFER = 'Prefer';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7240
      */
-    const PREFERENCE_APPLIED = 'Preference-Applied';
+    public const PREFERENCE_APPLIED = 'Preference-Applied';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const PROFILEOBJECT = 'ProfileObject';
+    public const PROFILEOBJECT = 'ProfileObject';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const PROTOCOL = 'Protocol';
+    public const PROTOCOL = 'Protocol';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const PROTOCOL_INFO = 'Protocol-Info';
+    public const PROTOCOL_INFO = 'Protocol-Info';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const PROTOCOL_QUERY = 'Protocol-Query';
+    public const PROTOCOL_QUERY = 'Protocol-Query';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const PROTOCOL_REQUEST = 'Protocol-Request';
+    public const PROTOCOL_REQUEST = 'Protocol-Request';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7235#section-4.3
      */
-    const PROXY_AUTHENTICATE = 'Proxy-Authenticate';
+    public const PROXY_AUTHENTICATE = 'Proxy-Authenticate';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7615#section-4
      */
-    const PROXY_AUTHENTICATION_INFO = 'Proxy-Authentication-Info';
+    public const PROXY_AUTHENTICATION_INFO = 'Proxy-Authentication-Info';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7235#section-4.4
      */
-    const PROXY_AUTHORIZATION = 'Proxy-Authorization';
+    public const PROXY_AUTHORIZATION = 'Proxy-Authorization';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const PROXY_FEATURES = 'Proxy-Features';
+    public const PROXY_FEATURES = 'Proxy-Features';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const PROXY_INSTRUCTION = 'Proxy-Instruction';
+    public const PROXY_INSTRUCTION = 'Proxy-Instruction';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const PUBLIC = 'Public';
+    public const PUBLIC = 'Public';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7469
      */
-    const PUBLIC_KEY_PINS = 'Public-Key-Pins';
+    public const PUBLIC_KEY_PINS = 'Public-Key-Pins';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7469
      */
-    const PUBLIC_KEY_PINS_REPORT_ONLY = 'Public-Key-Pins-Report-Only';
+    public const PUBLIC_KEY_PINS_REPORT_ONLY = 'Public-Key-Pins-Report-Only';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7233#section-3.1
      */
-    const RANGE = 'Range';
+    public const RANGE = 'Range';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4437
      */
-    const REDIRECT_REF = 'Redirect-Ref';
+    public const REDIRECT_REF = 'Redirect-Ref';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-5.5.2
      */
-    const REFERER = 'Referer';
+    public const REFERER = 'Referer';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-7.1.3
      */
-    const RETRY_AFTER = 'Retry-After';
+    public const RETRY_AFTER = 'Retry-After';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const SAFE = 'Safe';
+    public const SAFE = 'Safe';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc6638
      */
-    const SCHEDULE_REPLY = 'Schedule-Reply';
+    public const SCHEDULE_REPLY = 'Schedule-Reply';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc6638
      */
-    const SCHEDULE_TAG = 'Schedule-Tag';
+    public const SCHEDULE_TAG = 'Schedule-Tag';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc6455
      */
-    const SEC_WEBSOCKET_ACCEPT = 'Sec-WebSocket-Accept';
+    public const SEC_WEBSOCKET_ACCEPT = 'Sec-WebSocket-Accept';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc6455
      */
-    const SEC_WEBSOCKET_EXTENSIONS = 'Sec-WebSocket-Extensions';
+    public const SEC_WEBSOCKET_EXTENSIONS = 'Sec-WebSocket-Extensions';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc6455
      */
-    const SEC_WEBSOCKET_KEY = 'Sec-WebSocket-Key';
+    public const SEC_WEBSOCKET_KEY = 'Sec-WebSocket-Key';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc6455
      */
-    const SEC_WEBSOCKET_PROTOCOL = 'Sec-WebSocket-Protocol';
+    public const SEC_WEBSOCKET_PROTOCOL = 'Sec-WebSocket-Protocol';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc6455
      */
-    const SEC_WEBSOCKET_VERSION = 'Sec-WebSocket-Version';
+    public const SEC_WEBSOCKET_VERSION = 'Sec-WebSocket-Version';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const SECURITY_SCHEME = 'Security-Scheme';
+    public const SECURITY_SCHEME = 'Security-Scheme';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-7.4.2
      */
-    const SERVER = 'Server';
+    public const SERVER = 'Server';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc6265
      */
-    const SET_COOKIE = 'Set-Cookie';
+    public const SET_COOKIE = 'Set-Cookie';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc2965
      * @deprecated
      */
-    const SET_COOKIE2 = 'Set-Cookie2';
+    public const SET_COOKIE2 = 'Set-Cookie2';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const SETPROFILE = 'SetProfile';
+    public const SETPROFILE = 'SetProfile';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc5023
      */
-    const SLUG = 'SLUG';
+    public const SLUG = 'SLUG';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const SOAPACTION = 'SoapAction';
+    public const SOAPACTION = 'SoapAction';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const STATUS_URI = 'Status-URI';
+    public const STATUS_URI = 'Status-URI';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc6797
      */
-    const STRICT_TRANSPORT_SECURITY = 'Strict-Transport-Security';
+    public const STRICT_TRANSPORT_SECURITY = 'Strict-Transport-Security';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const SURROGATE_CAPABILITY = 'Surrogate-Capability';
+    public const SURROGATE_CAPABILITY = 'Surrogate-Capability';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const SURROGATE_CONTROL = 'Surrogate-Control';
+    public const SURROGATE_CONTROL = 'Surrogate-Control';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const TCN = 'TCN';
+    public const TCN = 'TCN';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7230#section-4.3
      */
-    const TE = 'TE';
+    public const TE = 'TE';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4918
      */
-    const TIMEOUT = 'Timeout';
+    public const TIMEOUT = 'Timeout';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc8030#section-5.4
      */
-    const TOPIC = 'Topic';
+    public const TOPIC = 'Topic';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7230#section-4.4
      */
-    const TRAILER = 'Trailer';
+    public const TRAILER = 'Trailer';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7230#section-3.3.1
      */
-    const TRANSFER_ENCODING = 'Transfer-Encoding';
+    public const TRANSFER_ENCODING = 'Transfer-Encoding';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc8030#section-5.2
      */
-    const TTL = 'TTL';
+    public const TTL = 'TTL';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc8030#section-5.3
      */
-    const URGENCY = 'Urgency';
+    public const URGENCY = 'Urgency';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const URI = 'URI';
+    public const URI = 'URI';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7230#section-6.7
      */
-    const UPGRADE = 'Upgrade';
+    public const UPGRADE = 'Upgrade';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-5.5.3
      */
-    const USER_AGENT = 'User-Agent';
+    public const USER_AGENT = 'User-Agent';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const VARIANT_VARY = 'Variant-Vary';
+    public const VARIANT_VARY = 'Variant-Vary';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7231#section-7.1.4
      */
-    const VARY = 'Vary';
+    public const VARY = 'Vary';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7230#section-5.7.1
      */
-    const VIA = 'Via';
+    public const VIA = 'Via';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7235#section-4.1
      */
-    const WWW_AUTHENTICATE = 'WWW-Authenticate';
+    public const WWW_AUTHENTICATE = 'WWW-Authenticate';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const WANT_DIGEST = 'Want-Digest';
+    public const WANT_DIGEST = 'Want-Digest';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7234#section-5.5
      */
-    const WARNING = 'Warning';
+    public const WARNING = 'Warning';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc7034
      */
-    const X_FRAME_OPTIONS = 'X-Frame-Options';
+    public const X_FRAME_OPTIONS = 'X-Frame-Options';
 
     // Provisional Message Headers
 
@@ -938,194 +938,194 @@ final class Header
      * @var string
      * @deprecated
      */
-    const ACCESS_CONTROL = 'Access-Control';
+    public const ACCESS_CONTROL = 'Access-Control';
 
     /**
      * @var string
      * @see https://fetch.spec.whatwg.org/#http-requests
      */
-    const ACCESS_CONTROL_ALLOW_CREDENTIALS = 'Access-Control-Allow-Credentials';
+    public const ACCESS_CONTROL_ALLOW_CREDENTIALS = 'Access-Control-Allow-Credentials';
 
     /**
      * @var string
      */
-    const ACCESS_CONTROL_ALLOW_HEADERS = 'Access-Control-Allow-Headers';
+    public const ACCESS_CONTROL_ALLOW_HEADERS = 'Access-Control-Allow-Headers';
 
     /**
      * @var string
      */
-    const ACCESS_CONTROL_ALLOW_METHODS = 'Access-Control-Allow-Methods';
+    public const ACCESS_CONTROL_ALLOW_METHODS = 'Access-Control-Allow-Methods';
 
     /**
      * @var string
      */
-    const ACCESS_CONTROL_ALLOW_ORIGIN = 'Access-Control-Allow-Origin';
+    public const ACCESS_CONTROL_ALLOW_ORIGIN = 'Access-Control-Allow-Origin';
 
     /**
      * @var string
      */
-    const ACCESS_CONTROL_MAX_AGE = 'Access-Control-Max-Age';
+    public const ACCESS_CONTROL_MAX_AGE = 'Access-Control-Max-Age';
 
     /**
      * @var string
      */
-    const ACCESS_CONTROL_REQUEST_METHOD = 'Access-Control-Request-Method';
+    public const ACCESS_CONTROL_REQUEST_METHOD = 'Access-Control-Request-Method';
 
     /**
      * @var string
      */
-    const ACCESS_CONTROL_REQUEST_HEADERS = 'Access-Control-Request-Headers';
-
-    /**
-     * @var string
-     * @see https://tools.ietf.org/html/rfc4229
-     */
-    const COMPLIANCE = 'Compliance';
+    public const ACCESS_CONTROL_REQUEST_HEADERS = 'Access-Control-Request-Headers';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const CONTENT_TRANSFER_ENCODING = 'Content-Transfer-Encoding';
+    public const COMPLIANCE = 'Compliance';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const COST = 'Cost';
+    public const CONTENT_TRANSFER_ENCODING = 'Content-Transfer-Encoding';
+
+    /**
+     * @var string
+     * @see https://tools.ietf.org/html/rfc4229
+     */
+    public const COST = 'Cost';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc6017
      */
-    const EDIINT_FEATURES = 'EDIINT-Features';
+    public const EDIINT_FEATURES = 'EDIINT-Features';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const MESSAGE_ID = 'Message-ID';
+    public const MESSAGE_ID = 'Message-ID';
 
     /**
      * @var string
      * @deprecated
      */
-    const METHOD_CHECK = 'Method-Check';
+    public const METHOD_CHECK = 'Method-Check';
 
     /**
      * @var string
      * @deprecated
      */
-    const METHOD_CHECK_EXPIRES = 'Method-Check-Expires';
+    public const METHOD_CHECK_EXPIRES = 'Method-Check-Expires';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const NON_COMPLIANCE = 'Non-Compliance';
+    public const NON_COMPLIANCE = 'Non-Compliance';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const OPTIONAL = 'Optional';
+    public const OPTIONAL = 'Optional';
 
     /**
      * @var string
      * @deprecated
      */
-    const REFERER_ROOT = 'Referer-Root';
+    public const REFERER_ROOT = 'Referer-Root';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const RESOLUTION_HINT = 'Resolution-Hint';
+    public const RESOLUTION_HINT = 'Resolution-Hint';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const RESOLVER_LOCATION = 'Resolver-Location';
+    public const RESOLVER_LOCATION = 'Resolver-Location';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const SUBOK = 'SubOK';
+    public const SUBOK = 'SubOK';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const SUBST = 'Subst';
+    public const SUBST = 'Subst';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const TITLE = 'Title';
+    public const TITLE = 'Title';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const UA_COLOR = 'UA-Color';
+    public const UA_COLOR = 'UA-Color';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const UA_MEDIA = 'UA-Media';
+    public const UA_MEDIA = 'UA-Media';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const UA_PIXELS = 'UA-Pixels';
+    public const UA_PIXELS = 'UA-Pixels';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const UA_RESOLUTION = 'UA-Resolution';
+    public const UA_RESOLUTION = 'UA-Resolution';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const UA_WINDOWPIXELS = 'UA-Windowpixels';
+    public const UA_WINDOWPIXELS = 'UA-Windowpixels';
 
     /**
      * @var string
      * @see https://tools.ietf.org/html/rfc4229
      */
-    const VERSION = 'Version';
+    public const VERSION = 'Version';
 
     /**
      * @var string
      */
-    const X_DEVICE_ACCEPT = 'X-Device-Accept';
+    public const X_DEVICE_ACCEPT = 'X-Device-Accept';
 
     /**
      * @var string
      */
-    const X_DEVICE_ACCEPT_CHARSET = 'X-Device-Accept-Charset';
+    public const X_DEVICE_ACCEPT_CHARSET = 'X-Device-Accept-Charset';
 
     /**
      * @var string
      */
-    const X_DEVICE_ACCEPT_ENCODING = 'X-Device-Accept-Encoding';
+    public const X_DEVICE_ACCEPT_ENCODING = 'X-Device-Accept-Encoding';
 
     /**
      * @var string
      */
-    const X_DEVICE_ACCEPT_LANGUAGE = 'X-Device-Accept-Language';
+    public const X_DEVICE_ACCEPT_LANGUAGE = 'X-Device-Accept-Language';
 
     /**
      * @var string
      */
-    const X_DEVICE_USER_AGENT = 'X-Device-User-Agent';
+    public const X_DEVICE_USER_AGENT = 'X-Device-User-Agent';
 
     // Non-standard Headers
 
@@ -1133,112 +1133,112 @@ final class Header
      * @var string
      * @see https://www.w3.org/TR/CSP3/#csp-header
      */
-    const CONTENT_SECURITY_POLICY = 'Content-Security-Policy';
+    public const CONTENT_SECURITY_POLICY = 'Content-Security-Policy';
 
     /**
      * @var string
      */
-    const DNT = 'DNT';
+    public const DNT = 'DNT';
 
     /**
      * @var string
      */
-    const PROXY_CONNECTION = 'Proxy-Connection';
+    public const PROXY_CONNECTION = 'Proxy-Connection';
 
     /**
      * @var string
      */
-    const STATUS = 'Status';
+    public const STATUS = 'Status';
 
     /**
      * @var string
      */
-    const UPGRADE_INSECURE_REQUESTS = 'Upgrade-Insecure-Requests';
+    public const UPGRADE_INSECURE_REQUESTS = 'Upgrade-Insecure-Requests';
 
     /**
      * @var string
      */
-    const X_CONTENT_DURATION = 'X-Content-Duration';
+    public const X_CONTENT_DURATION = 'X-Content-Duration';
 
     /**
      * @var string
      */
-    const X_CONTENT_SECURITY_POLICY = 'X-Content-Security-Policy';
+    public const X_CONTENT_SECURITY_POLICY = 'X-Content-Security-Policy';
 
     /**
      * @var string
      */
-    const X_CONTENT_TYPE_OPTIONS = 'X-Content-Type-Options';
+    public const X_CONTENT_TYPE_OPTIONS = 'X-Content-Type-Options';
 
     /**
      * @var string
      */
-    const X_CORRELATION_ID = 'X-Correlation-ID';
+    public const X_CORRELATION_ID = 'X-Correlation-ID';
 
     /**
      * @var string
      */
-    const X_CSRF_TOKEN = 'X-Csrf-Token';
+    public const X_CSRF_TOKEN = 'X-Csrf-Token';
 
     /**
      * @var string
      */
-    const X_FORWARDED_FOR = 'X-Forwarded-For';
+    public const X_FORWARDED_FOR = 'X-Forwarded-For';
 
     /**
      * @var string
      */
-    const X_FORWARDED_HOST = 'X-Forwarded-Host';
+    public const X_FORWARDED_HOST = 'X-Forwarded-Host';
 
     /**
      * @var string
      */
-    const X_FORWARDED_PROTO = 'X-Forwarded-Proto';
+    public const X_FORWARDED_PROTO = 'X-Forwarded-Proto';
 
     /**
      * @var string
      */
-    const X_HTTP_METHOD_OVERRIDE = 'X-Http-Method-Override';
+    public const X_HTTP_METHOD_OVERRIDE = 'X-Http-Method-Override';
 
     /**
      * @var string
      */
-    const X_POWERED_BY = 'X-Powered-By';
+    public const X_POWERED_BY = 'X-Powered-By';
 
     /**
      * @var string
      */
-    const X_REQUEST_ID = 'X-Request-ID';
+    public const X_REQUEST_ID = 'X-Request-ID';
 
     /**
      * @var string
      */
-    const X_REQUESTED_WITH = 'X-Requested-With';
+    public const X_REQUESTED_WITH = 'X-Requested-With';
 
     /**
      * @var string
      */
-    const X_UA_COMPATIBLE = 'X-UA-Compatible';
+    public const X_UA_COMPATIBLE = 'X-UA-Compatible';
 
     /**
      * @var string
      */
-    const X_UIDH = 'X-UIDH';
+    public const X_UIDH = 'X-UIDH';
 
     /**
      * @var string
      */
-    const X_WAP_PROFILE = 'X-Wap-Profile';
+    public const X_WAP_PROFILE = 'X-Wap-Profile';
 
     /**
      * @var string
      */
-    const X_WEBKIT_CSP = 'X-WebKit-CSP';
+    public const X_WEBKIT_CSP = 'X-WebKit-CSP';
 
     /**
      * @var string
      */
-    const X_XSS_PROTECTION = 'X-XSS-Protection';
+    public const X_XSS_PROTECTION = 'X-XSS-Protection';
 
     private function __construct()
     {
