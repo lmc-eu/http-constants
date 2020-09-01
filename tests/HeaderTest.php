@@ -4,7 +4,7 @@ use Lmc\HttpConstants\Header;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @coversDefaultClass \Lmc\HttpConstants\Header
+ * @covers \Lmc\HttpConstants\Header
  */
 final class HeaderTest extends TestCase
 {
