@@ -10,11 +10,11 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.2 || ^8.0"
+        "php": "^7.3 || ^8.0"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.8",
-        "lmc/coding-standard": "^2.0.3",
+        "lmc/coding-standard": "^3.0",
         "php-parallel-lint/php-parallel-lint": "^1.2",
         "phpunit/phpunit": "^8.1 || ^9.0"
     },
@@ -36,13 +36,13 @@
         "analyze": [
             "@cs"
         ],
-        "cs": "./vendor/bin/ecs check ./src/ ./tests/ --ansi",
+        "cs": "./vendor/bin/ecs check ./src/ ./tests/ ecs.php --ansi",
         "fix": [
             "@composer normalize",
-            "vendor/bin/ecs check -vv --ansi --clear-cache --fix src/ tests/"
+            "vendor/bin/ecs check -vv --ansi --clear-cache --fix src/ tests/ ecs.php"
         ],
         "lint": [
-            "vendor/bin/parallel-lint -j 10 -e php ./src ./tests",
+            "vendor/bin/parallel-lint -j 10 -e php ./src ./tests ecs.php",
             "@composer validate",
             "@composer normalize --dry-run"
         ],
