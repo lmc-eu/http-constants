@@ -1,6 +1,7 @@
 <?php declare(strict_types=1);
 
-use Lmc\HttpConstants\Header;
+namespace Lmc\HttpConstants;
+
 use PHPUnit\Framework\TestCase;
 
 /**

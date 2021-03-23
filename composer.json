@@ -16,7 +16,7 @@
         "ergebnis/composer-normalize": "^2.8",
         "lmc/coding-standard": "^3.0",
         "php-parallel-lint/php-parallel-lint": "^1.2",
-        "phpunit/phpunit": "^8.1 || ^9.0"
+        "phpunit/phpunit": "^9.5"
     },
     "config": {
         "sort-packages": true
@@ -24,6 +24,11 @@
     "autoload": {
         "psr-4": {
             "Lmc\\HttpConstants\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lmc\\HttpConstants\\": "tests/"
         }
     },
     "minimum-stability": "stable",
@@ -46,7 +51,6 @@
             "@composer validate",
             "@composer normalize --dry-run"
         ],
-        "phpstan": "vendor/bin/phpstan analyze ./src ./tests -c phpstan.neon --ansi --level 7",
         "tests": "vendor/bin/phpunit"
     }
 }
