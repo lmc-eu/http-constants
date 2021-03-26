@@ -1,9 +1,9 @@
-<phpunit
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
-    bootstrap="./vendor/autoload.php"
-    colors="true"
-    forceCoversAnnotation="true"
+<?xml version="1.0"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="./vendor/autoload.php"
+         colors="true"
+         forceCoversAnnotation="true"
 >
     <testsuites>
         <testsuite name="unit">
@@ -11,11 +11,11 @@
         </testsuite>
     </testsuites>
 
-    <filter>
-        <whitelist>
+    <coverage>
+        <include>
             <directory suffix=".php">./src</directory>
-        </whitelist>
-    </filter>
+        </include>
+    </coverage>
 
     <php>
         <!-- E_ALL = 30719 -->

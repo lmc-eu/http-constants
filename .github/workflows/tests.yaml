@@ -12,12 +12,11 @@ jobs:
 
     strategy:
       matrix:
-        php-versions: ['7.2', '7.3', '7.4']
+        php-versions: ['7.3', '7.4', '8.0']
         dependencies: ['']
         include:
           # Add lowest dependencies build for the lowest supported PHP version
-          - { php-versions: '7.2', dependencies: '--prefer-lowest' }
-          - { php-versions: '8.0', dependencies: '--ignore-platform-reqs' }
+          - { php-versions: '7.3', dependencies: '--prefer-lowest' }
 
     name: PHP ${{ matrix.php-versions }} ${{ matrix.dependencies }}
 
@@ -54,7 +53,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '7.4'
+          php-version: '8.0'
           extensions: mbstring, intl
 
       - name: Install dependencies
