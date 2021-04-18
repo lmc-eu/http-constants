@@ -66,7 +66,7 @@ For latest changes see [CHANGELOG.md](CHANGELOG.md) file. We follow [Semantic Ve
 ## License
 The library is open source software licensed under the [MIT license](LICENCE.md).
 
-[pure PHP]: http://php.net/manual/en/function.header.php
+[pure PHP]: https://www.php.net/manual/en/function.header.php
 [Guzzle]: https://github.com/guzzle/guzzle
 [Symfony HttpFoundation]: https://symfony.com/doc/current/components/http_foundation.html
 [Zend HTTP]: https://zendframework.github.io/zend-http/
