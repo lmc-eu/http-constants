@@ -1,7 +1,7 @@
 # HTTP Header Fields Constants for PHP
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/lmc/http-constants.svg?style=flat-square)](https://packagist.org/packages/lmc/http-constants)
-[![GitHub Actions Build Status](https://img.shields.io/github/workflow/status/lmc-eu/http-constants/Tests%20and%20linting.svg?style=flat-square)](https://github.com/lmc-eu/http-constants/actions)
+[![GitHub Actions Build Status](https://img.shields.io/github/actions/workflow/status/lmc-eu/http-constants/tests.yaml?style=flat-square)](https://github.com/lmc-eu/http-constants/actions)
 [![Total Downloads](https://img.shields.io/packagist/dt/lmc/http-constants.svg?style=flat-square)](https://packagist.org/packages/lmc/http-constants)
 
 The missing PHP constants definition for header fields of your HTTP requests and responses. 
